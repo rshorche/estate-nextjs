@@ -1,8 +1,7 @@
 import "@/styles/globals.css";
+import Link from "next/link";
 
 export default function App({ Component, pageProps }) {
-  // return <Component {...pageProps} />
-
   return (
     <div className="container">
       <div className="sidebar">
@@ -47,19 +46,23 @@ export default function App({ Component, pageProps }) {
       </div>
 
       <header className="header">
-        <img src="img/logo.png" alt="Nexter Logo" className="header__logo" />
+        <img src="/img/logo.png" alt="Nexter Logo" className="header__logo" />
         <h3 className="u-heading-3 u-heading--light">خانه خودتان:</h3>
         <h1 className="u-heading-1">با خرید خانه نهایت آزادی را احساس کنید</h1>
-        <button className="btn header__btn btn-brown">
+        <Link href="/homes" className="btn header__btn btn-brown">
           املاک ما را مشاهده کنید
-        </button>
+        </Link>
 
         <p className="seeon__text">دیده می شود در</p>
         <figure className="seeon__box-img">
-          <img src="img/logo-bbc.png" alt="BBC" className="seeon__img" />
-          <img src="img/logo-bi.png" alt="BBC" className="seeon__img" />
-          <img src="img/logo-forbes.png" alt="BBC" className="seeon__img" />
-          <img src="img/logo-techcrunch.png" alt="BBC" className="seeon__img" />
+          <img src="/img/logo-bbc.png" alt="BBC" className="seeon__img" />
+          <img src="/img/logo-bi.png" alt="BBC" className="seeon__img" />
+          <img src="/img/logo-forbes.png" alt="BBC" className="seeon__img" />
+          <img
+            src="/img/logo-techcrunch.png"
+            alt="BBC"
+            className="seeon__img"
+          />
         </figure>
       </header>
 
@@ -67,7 +70,7 @@ export default function App({ Component, pageProps }) {
         <p className="real-tors__tittle">سه مالک برتر</p>
         <div className="real-tors__list">
           <img
-            src="img/realtor-1.jpeg"
+            src="/img/realtor-1.jpeg"
             alt="real-tors top 1"
             className="real-tors__img"
           />
@@ -77,7 +80,7 @@ export default function App({ Component, pageProps }) {
           </div>
 
           <img
-            src="img/realtor-2.jpeg"
+            src="/img/realtor-2.jpeg"
             alt="real-tors top 2"
             className="real-tors__img"
           />
@@ -87,7 +90,7 @@ export default function App({ Component, pageProps }) {
           </div>
 
           <img
-            src="img/realtor-3.jpeg"
+            src="/img/realtor-3.jpeg"
             alt="real-tors top 3"
             className="real-tors__img"
           />
